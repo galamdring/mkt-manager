@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ProductsPage from "./products/ProductsPage";
+import ProductComponent from "./products/ProductComponent"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <ProductComponent id="1234" name="Lime Time" count={5} cost="1.25" price="5.00"/>
+      <ProductsPage />
     </div>
   );
 }
